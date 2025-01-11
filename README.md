@@ -10,4 +10,5 @@ Diese Website befindet sich im Entwicklungsmodus, und da sie für den privaten G
 ## Nutzung
 Wenn du dir dein Festival-Line-up erstellen lassen möchtest, ist es daher notwendig, dass du zuvor deine **E-Mail-Adresse die zu deinem Spotify-Konto gehört** an [mich](mailto:nutzer@festival.ninja] sendest.
 Im Anschluss füge ich dich manuell im Spotify-Developer-Dashboard hinzu und kontaktiere dich, dass du freigeschaltet bist.
-_Durch das Zusenden Ihrer E-Mail-Adresse erklären Sie sich damit einverstanden, dass wir diese zur Kommunikation speichern und verwenden. Ihre Daten werden ausschließlich für den angegebenen Zweck genutzt. Sie können jederzeit Auskunft über die gespeicherten Daten verlangen oder die Löschung beantragen._
+
+_Indem du mir deine E-Mail-Adresse zusendest, erklärst du dich damit einverstanden, dass ich diese speichere und verwende, um dir den Zugang zur Spotify-Schnittstelle zu ermöglichen. Deine E-Mail-Adresse wird ausschließlich für diesen Zweck genutzt und nicht an Dritte weitergegeben. Du kannst jederzeit Auskunft über die gespeicherten Daten verlangen oder deren Löschung verlangen._
