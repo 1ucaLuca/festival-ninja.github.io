@@ -4,6 +4,7 @@ Du kannst das Festival nach deinen Wünschen anpassen, sowohl in Bezug auf die A
 
 ## Disclaimer
 Diese Website befindet sich im Entwicklungsmodus, und da sie für den privaten Gebrauch entwickelt wurde, ist es nicht möglich, den erweiterten API-Zugang zu erhalten.
+
 ![image](https://github.com/user-attachments/assets/cef33a86-287d-4ab1-a8c5-f699e57eb3e8)
 
 ## Nutzung
