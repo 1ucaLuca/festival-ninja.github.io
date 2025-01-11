@@ -1,0 +1,412 @@
+/* GLOBAL STYLES */
+
+@font-face {
+    font-family: "built-titling";
+    src: url(fonts/built-titling.rg-bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "built-titling";
+    src: url(fonts/built-titling.sb-regular.otf);
+    font-weight: normal;
+}
+
+:root {
+    --main-white: rgb(250, 250, 230);
+    --main-black: rgb(0, 0, 0);
+    --main-violet: rgb(177, 156, 217);
+    --spotify-green: rgb(30, 215, 96);
+}
+
+body {
+    font-family: "built-titling";
+    color: var(--main-black);
+    letter-spacing: 1px;
+    margin: 0;
+    background-color: var(--main-violet);
+}
+
+header {
+    background-color: var(--main-white);
+    color: var(--main-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px auto;
+    width: 800px;
+    border: solid 4px var(--main-black);
+    border-radius: 20px;
+    box-shadow: 6px 6px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.footer {
+    margin-top: 22px;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--main-violet);
+    transition: 0.5s ease;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    height: 60px;
+    width: 80%;
+    font-family: "built-titling";
+    font-size: 28px;
+    letter-spacing: 1px;
+    border: solid 2px var(--main-black);
+    border-radius: 5px;
+    margin-top: 30px;
+
+    background: linear-gradient(var(--main-white), var(--main-white) 50%,
+                                var(--main-violet) 50%, var(--main-violet));
+    background-size: 100% 200%;
+    transition: 0.5s ease;
+}
+
+
+/* index.html */
+
+.main-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.welcome-page {
+    margin: 20px;
+    height: 550px;
+    width: 700px;
+    padding: 20px 40px 20px 40px;
+    background-color: var(--main-white);
+    border: solid 4px var(--main-black);
+    border-radius: 20px;
+    box-shadow: 6px 6px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.welcome-text {
+    margin: 0px;
+    padding-bottom: 10px;
+    font-size: 28px;
+}
+
+.highlight {
+    color: var(--main-violet);
+}
+
+.add-padding {
+    display: block;
+    padding: 6px;
+}
+
+.welcome-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn[id=spotify-login] {
+    width: 400px;
+
+    background: linear-gradient(var(--main-white), var(--main-white) 50%,
+                                var(--spotify-green) 50%, var(--spotify-green));
+    background-size: 100% 200%;
+    transition: 0.5s ease;
+}
+
+#spotify-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.spotify-logo-wrapper {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
+}
+
+.spotify-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.spotify-logo.original {
+    opacity: 1;
+}
+
+.spotify-logo.hover {
+    opacity: 0;
+}
+
+#spotify-login:hover .spotify-logo.original {
+    opacity: 0;
+}
+
+#spotify-login:hover .spotify-logo.hover {
+    opacity: 1;
+}
+
+
+/* results.html */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 440px 1fr;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.customization {
+    margin: 20px;
+    height: 520px;
+    width: 400px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: var(--main-white);
+    border: solid 4px var(--main-black);
+    border-radius: 20px;
+    box-shadow: 6px 6px;
+}
+
+.customization-inner {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.customization-inner[id=updateArtist] {
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.canvas {
+    margin: 20px;
+    flex-grow: 1;
+    height: 660px;
+    width: 780px;
+    background-color: var(--main-white);
+    border: solid 4px var(--main-black);
+    border-radius: 20px;
+    box-shadow: 6px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download {
+    margin: 20px;
+    height: 580px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--main-violet);
+    border: solid 2px var(--main-black);
+}
+
+.font-festival-name {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    color: var(--main-white);
+    background-color: var(--main-violet);
+    margin-top: auto;
+}
+
+.line-up {
+    background-color: var(--main-violet);
+}
+
+.font-credits {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+    color: var(--main-white);
+    background-color: var(--main-violet);
+    margin-top: auto;
+}
+
+#artist-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+}
+
+.font-date {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    width: 620px;
+    color: var(--main-white);
+}
+
+.font-large {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    opacity: 90%;
+}
+
+.font-medium {
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    opacity: 70%;
+}
+
+.font-small {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    opacity: 50%;
+}
+
+.spotify-credits {
+    height: 24px;
+    transform: translateY(5px);
+}
+
+.btn[id=download-btn] {
+    margin: 0;
+    font-size: 18px;
+    height: 60px;
+    width: 160px;
+    transform: translateY(-50px);
+}
+
+input[id=festival-name-input] {
+    font-family: "built-titling";
+    text-align: left;
+    padding-left: 15px;
+    font-size: 20px;
+    height: 40px;
+    width: 200px;
+    margin-bottom: 15px;
+    background-color: var(--main-white);
+    border: solid 2px var(--main-black);
+    border-radius: 5px;
+}
+
+label {
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    width: 240px;
+    line-height: 40px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border: solid 2px var(--main-black);
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.radio-custom {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio-custom:checked + label {
+    opacity: 100%;
+}
+
+.radio-custom:checked + label {
+    opacity: 1;
+    color: rgb(250, 250, 240);
+    background-color: var(--main-violet);
+    
+}
+
+.radio-custom:not(:checked) + label {
+    color: var(--main-black);
+    background-color: transparent;
+}
+
+.info-button {
+    height: 15px;
+    padding: 5px;
+    transform: translateY(21px);
+
+}
+
+.info-bubble {
+    display: flex;
+    background-color: var(--main-white);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.info-bubble:hover::after {
+    content: attr(data-text);
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    position: absolute;
+    background-color: var(--main-white);
+    border: solid 2px var(--main-black);
+    border-radius: 5px;
+    box-shadow: 3px 3px;
+    transform: translateY(50px);
+    z-index: 1;
+}
+
+/* global */
+
+.btn:hover {
+    color: var(--main-white);
+    background-position: 100% 100%;
+}

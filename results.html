@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Ninja</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/ninja-black.png" alt="Ninja Icon">
+            <h1>Festival Ninja</h1>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div id="customization" class="customization">
+            <div>
+                <div class="customization-immer">
+                    <h2>Festival Name</h2>
+                    <input type="text" id="festival-name-input" placeholder="z. B. Ninja Fest">
+                </div>
+
+                <div class="customization-inner">
+                    <h2>Anzahl der Künstler</h2><br>
+                    <div class="info-bubble" data-text="Hier kannst du festlegen, wie viele Künstler dein Festival haben soll. Somit bestimmst du die Größe deines Line-ups.">
+                        <img src="/images/information-button.png" class="info-button">
+                    </div>
+                </div>
+
+                <div class="customization-inner">
+                    <input type="radio" name="artist_count" value="10" id="count10" class="radio-custom">
+                    <label for="count10">10</label>
+                    
+                    <input type="radio" name="artist_count" value="18" id="count18" class="radio-custom" checked>
+                    <label for="count18">18</label>
+                    
+                    <input type="radio" name="artist_count" value="30" id="count30" class="radio-custom">
+                    <label for="count30">30</label>
+                </div>
+                
+                <div class="customization-inner">
+                    <h2>Zeitraum</h2>
+                    <div class="info-bubble" data-text="Hier kannst du festlegen, wie alt oder neu deine Spotify Daten sein sollen. Du legst fest, ob du die Lieblingskünstler der letzten Wochen, Monate oder des vergangenen Jahres teilst.">
+                        <img src="/images/information-button.png" class="info-button">
+                    </div>
+                </div>
+
+                <div class="customization-inner">
+                    <input type="radio" name="time_range" value="short_term" id="short_term" class="radio-custom">
+                    <label for="short_term">4 Wochen</label>
+
+                    <input type="radio" name="time_range" value="medium_term" id="medium_term" class="radio-custom" checked>
+                    <label for="medium_term">6 Monate</label>
+
+                    <input type="radio" name="time_range" value="long_term" id="long_term" class="radio-custom">
+                    <label for="long_term">12 Monate</label>
+                </div>
+            </div>
+
+            <div class="customization-inner" id="updateArtist">
+                <button onclick="updateArtists()" class="btn">Generiere dein Line-up</button>
+            </div>
+
+            <div class="footer">
+                <a href="index.html">Home</a>
+                <a> • </a>
+                <a href="dsgvo.html">DSGVO</a>
+                <a> • </a>
+                <a href="https://github.com/1ucaLuca/festival-ninja.github.io" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="result">
+            <div class="canvas">
+                <div class="download" id="download-img">
+                    <div class="font-festival-name" id="festival-name">
+                        Ninja Fest
+                    </div>
+
+                    <div id="artist-list" class="line-up"></div>
+
+                    <div class="font-credits">
+                        Made with Festival.ninja &
+                        <img src="/images/spotify-white.png" class="spotify-credits">
+                    </div>
+                </div>
+            </div>
+
+            <div class="customization-inner">
+                <button onclick="downloadImage()" class="btn" id="download-btn">Dein Line-up Herunterladen</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</body>
+</html>

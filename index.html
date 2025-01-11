@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Ninja</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/ninja-black.png" alt="Ninja Icon">
+            <h1>Festival Ninja</h1>
+        </div>
+    </header>
+    <div class="main-index">
+        <div class="welcome-page">
+
+            <h1>Beschreibung</h1>
+            <p class="welcome-text">
+                Mit <span class="highlight">Festival Ninja</span> kannst du ganz einfach dein persönliches Festival-Line-up erstellen.<span class="add-padding"> </span>
+                Je öfter du einen Künstler hörst, desto größer wird er auf deinem Line-up.<span class="add-padding"> </span>
+                Du hast außerdem die Möglichkeit, das Festival ganz nach deinen Wünschen anzupassen - sowohl in Bezug auf die Anzahl der Künstler als auch auf den Zeitraum.<span class="add-padding"> </span>
+                Zum Schluss kannst du dein Line-up herunterladen und mit deinen Freunden teilen!
+            </p>
+
+            <div class="welcome-center">
+                <button id="spotify-login" onclick="loginWithSpotify()" class="btn">
+                    <div class="spotify-logo-wrapper">
+                        <img src="/images/spotify-logo-orig.png" class="spotify-logo original">
+                        <img src="/images/spotify-logo-white.png" class="spotify-logo hover">
+                    </div>
+                    Mit Spotify verbinden
+                </button>
+
+                <div class="footer">
+                    <a href="dsgvo.html">DSGVO</a>
+                    <a> • </a>
+                    <a href="https://github.com/1ucaLuca/festival-ninja.github.io" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+</html>
