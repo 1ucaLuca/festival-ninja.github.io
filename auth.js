@@ -1,5 +1,5 @@
 const client_id = '80b1d43ee96d4cae952761ebb9762598';
-const redirect_uri = 'http://localhost:5500/results.html';
+const redirect_uri = 'https://festival.ninja/results.html';
 const scope = 'user-top-read';
 
 function loginWithSpotify() {
